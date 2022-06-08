@@ -80,24 +80,24 @@ class AccountScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      ListTile(
-                        leading: const Icon(Icons.help),
-                        title: const Text(
-                          'Helps',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                        subtitle: const Text('call +255747343174'),
-                        trailing: const Icon(Icons.chevron_right),
-                      ),
-                      const ListTile(
-                        leading: Icon(Icons.verified_outlined),
-                        title: Text(
-                          'About App',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                        subtitle: Text('@VaccineMS V1.0.0'),
-                        trailing: Icon(Icons.chevron_right),
-                      ),
+                      // ListTile(
+                      //   leading: const Icon(Icons.help),
+                      //   title: const Text(
+                      //     'Helps',
+                      //     style: TextStyle(fontSize: 18),
+                      //   ),
+                      //   subtitle: const Text('call +255747343174'),
+                      //   trailing: const Icon(Icons.chevron_right),
+                      // ),
+                      // const ListTile(
+                      //   leading: Icon(Icons.verified_outlined),
+                      //   title: Text(
+                      //     'About App',
+                      //     style: TextStyle(fontSize: 18),
+                      //   ),
+                      //   subtitle: Text('@VaccineMS V1.0.0'),
+                      //   trailing: Icon(Icons.chevron_right),
+                      // ),
                       ListTile(
                         leading: const Icon(Icons.logout),
                         title: const Text(

@@ -98,7 +98,8 @@ class GreatPlaces with ChangeNotifier {
         //     .toList();
         // _apiResponse.data as List<dynamic>;
         //update provider items
-        _items.add(Place.fromJson(jsonDecode(response.body)));
+        _items.insert(_items.length, Place.fromJson(jsonDecode(response.body)));
+      //  _items.add(Place.fromJson(jsonDecode(response.body)));
         notifyListeners();
       } else {
         _apiResponse.error = somethingWentWrong;

@@ -28,12 +28,16 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
     _pickedLocation = Location(latitude: lat, longitude: lng);
   }
 
-  void _savePlace() {
+  void _savePlace()async {
     if (_titleController.text.isEmpty || _pickedLocation == null) {
       return;
     }
-    Provider.of<GreatPlaces>(context, listen: false)
+   final response = await Provider.of<GreatPlaces>(context, listen: false)
         .addPlace(_titleController.text, _pickedLocation!);
+    if(response.error == null){
+      String message = 'Center added successfully';
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+    }
     Navigator.of(context).pop();
   }
 

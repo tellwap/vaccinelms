@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tvlms/screens/about_details_screen.dart';
 import 'package:tvlms/screens/auth/login_screen.dart';
+import 'package:tvlms/screens/helps_details_screen.dart';
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({Key? key}) : super(key: key);
 
@@ -21,13 +23,16 @@ class SettingsScreen extends StatelessWidget {
                       ListTile(
                         leading: const Icon(Icons.help),
                         title: const Text(
-                          'Helps',
+                          'Help',
                           style: TextStyle(fontSize: 18),
                         ),
                         subtitle: const Text('call +255747343174'),
                         trailing: const Icon(Icons.chevron_right),
+                        onTap: (){
+                          Navigator.pushNamed(context, HelpDetailsScreen.routeName);
+                        },
                       ),
-                      const ListTile(
+                       ListTile(
                         leading: Icon(Icons.verified_outlined),
                         title: Text(
                           'About App',
@@ -35,6 +40,10 @@ class SettingsScreen extends StatelessWidget {
                         ),
                         subtitle: Text('@VaccineMS V1.0.0'),
                         trailing: Icon(Icons.chevron_right),
+                        onTap: (){
+                          Navigator.pushNamed(context, AboutDetailsScreen.routeName);
+                        },
+
                       ),
                       ListTile(
                         leading: const Icon(Icons.login),

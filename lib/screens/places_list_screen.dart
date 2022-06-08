@@ -36,6 +36,7 @@ class PlacesListScreen extends StatelessWidget {
                       child: Text('Got no places yet, start adding some!'),
                     ),
                     builder: (ctx, greatPlaces, ch) => ListView.builder(
+                      reverse: true,
                       itemCount: greatPlaces.items.length,
                       itemBuilder: (ctx, i) => ListTile(
                         title: Text(

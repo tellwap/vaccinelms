@@ -7,12 +7,14 @@ import 'package:tvlms/areas/views/areas_screen.dart';
 import 'package:tvlms/areas/views/edit_area_screen.dart';
 import 'package:tvlms/providers/auths.dart';
 import 'package:tvlms/providers/great_places.dart';
+import 'package:tvlms/screens/about_details_screen.dart';
 import 'package:tvlms/screens/account_screen.dart';
 import 'package:tvlms/screens/add_place_screen.dart';
 import 'package:tvlms/screens/auth/login_screen.dart';
 import 'package:tvlms/screens/auth/register_screen.dart';
 import 'package:tvlms/screens/bottom_navigation_screen.dart';
 import 'package:tvlms/screens/dashboard_screen.dart';
+import 'package:tvlms/screens/helps_details_screen.dart';
 import 'package:tvlms/screens/place_detail_screen.dart';
 import 'package:tvlms/screens/places_list_screen.dart';
 import 'package:tvlms/screens/splash_screen.dart';
@@ -80,6 +82,8 @@ class MyApp extends StatelessWidget {
               AddAreaScreen.routeName: (ctx) => const AddAreaScreen(),
               EditAreaScreen.routeName: (ctx) => const EditAreaScreen(),
               AreaDetailsScreen.routeName: (ctx) => const AreaDetailsScreen(),
+              HelpDetailsScreen.routeName:(ctx)=>const HelpDetailsScreen(),
+              AboutDetailsScreen.routeName:(ctx)=>const AboutDetailsScreen(),
             }),
       ),
     );
